@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(https://startbootstrap.github.io/startbootstrap-business-casual/assets/img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+head {
+    min-height: 30vh;
+}
+
+.resp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+}
+
+.navwrap {
+    max-width: 100%;
+    min-height: 10vh;
+    background-color: rgba(47, 23, 15, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    z-index: 2;
+}
+
+.nav-btns a {
+    text-decoration: none;
+    color: white;
+}
+
+.resp h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+    color: rgb(254, 204, 144);
+    font-weight: normal;
+}
+
+.resp h2 {
+    font-size: 32 px;
+    letter-spacing: 2px;
+    color: rgb(248, 161, 54);
+}
+
+.home {
+    transition: .3s linear;
+}
+
+.about {
+    transition: .3s linear;
+}
+
+.home a:hover {
+    color: grey;
+}
+
+.about a:hover {
+    color: grey;
+}
+
+.shade {
+    position: fixed;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs {
+    max-width: 1200px;
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+}
+
+.imgs img {
+    max-width: 1000px;
+    min-height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+    position: relative;
+}
+
+.cofe-bar {
+    text-align: center;
+    background-color: blanchedalmond;
+    max-width: 500px;
+    min-height: 400px;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cofe-bar .Cbar1 {
+    font-weight: 600;
+}
+
+.cofe-bar .Cbar2 {
+    max-width: 200px;
+    font-weight: 100;
+    word-wrap: normal;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.cofe-bar .Cbar3 {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.cofe-bar button {
+    border: none;
+    max-width: 120px;
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(242, 179, 116);
+    position: absolute;
+    bottom: -5%;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.Promise {
+    margin-top: 50px;
+    max-width: 100%;
+    min-height: 30vh;
+    background-color: rgb(230, 167, 86);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}
+
+.textCont {
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+.menu {
+    display: none;
+    color: white;
+    font-size: 24px;
+}
+
+.textCont .PromiseContent2 {
+    font-size: 24px;
+}
+
+.textCont .PromiseContent3 {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-btns {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .imgs {
+        display: flex;
+        justify-content: center;
+        flex-direction: center;
+    }
+    .imgs img {
+        width: 400px;
+    }
+}
+
+.active {
+    min-height: 50vh;
+}
